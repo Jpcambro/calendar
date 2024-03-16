@@ -1,0 +1,75 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+  }
+  
+  .calendar {
+    width: 90%;
+    max-width: 400px;
+    margin: 50px auto;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .prev-button, .next-button {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .month-year {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .calendar-body {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+  }
+  
+  .calendar-day {
+    width: calc(100% / 7 - 2px); /* Adjusted width */
+    text-align: center;
+    padding: 10px 0;
+    border: 1px solid #ccc;
+    margin: 0px; /* Added margin for spacing */
+    box-sizing: border-box; /* Ensure padding and border are included in width */
+  }
+  
+  .today {
+    background-color: #BFD4DB; 
+    color: #333;
+    border: 1px solid #ccc;
+  }
+  
+  
+  /* Media queries for responsiveness */
+  
+  @media only screen and (min-width: 600px) {
+    .calendar {
+      max-width: 600px; /* Adjust max-width for larger screens */
+    }
+  }
+  
+  @media only screen and (max-width: 400px) {
+    .calendar-day {
+      width: 20%; /* Adjust day cell width for smaller screens */
+    }
+  }
+  
